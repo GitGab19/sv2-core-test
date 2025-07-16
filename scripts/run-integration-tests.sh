@@ -3,7 +3,7 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-INTEGRATION_DIR="$REPO_ROOT/../sv2-integration-test-framework"
+INTEGRATION_DIR="$REPO_ROOT/../sv2-integration-test-framework-test"
 
 echo "🧪 Running integration tests for sv2-core-test changes..."
 echo "📁 Repository root: $REPO_ROOT"
@@ -13,7 +13,7 @@ echo "📁 Integration test dir: $INTEGRATION_DIR"
 if [ ! -d "$INTEGRATION_DIR" ]; then
     echo "📥 Cloning integration test framework..."
     cd "$(dirname "$INTEGRATION_DIR")"
-    git clone https://github.com/GitGab19/sv2-integration-test-framework.git
+    git clone https://github.com/GitGab19/sv2-integration-test-framework-test.git
 else
     echo "🔄 Updating integration test framework..."
     cd "$INTEGRATION_DIR"
