@@ -1,5 +1,9 @@
+on:
+  pull_request:
+    branches:
+      - main
+
 name: CI
-on: [push, pull_request]
 
 jobs:
   test-core:
