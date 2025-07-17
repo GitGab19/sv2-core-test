@@ -27,8 +27,6 @@ jobs:
         run: cargo test --verbose
 
   integration-test:
-    if: github.event_name == 'pull_request'
-    needs: test-core
     uses: GitGab19/sv2-integration-test-framework-test/.github/workflows/test-with-branch.yml@main
     with:
       repo_name: "sv2-miner-apps-test"
