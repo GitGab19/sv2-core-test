@@ -17,12 +17,14 @@ members = [
     "sv2/roles-logic-sv2",
     "sv2/channels-sv2",
     "sv2/parsers-sv2",
-    "sv2/network-helpers",
     "common",
     "utils/buffer",
     "utils/error-handling",
     "utils/key-utils",
-    "utils/bip32-key-derivation"
+    "utils/bip32-key-derivation",
+    "roles-utils/rpc",
+    "roles-utils/config-helpers",
+    "roles-utils/network-helpers"
 ]
 
 [profile.dev]
