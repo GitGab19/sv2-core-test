@@ -29,7 +29,8 @@ jobs:
   integration-test:
     if: github.event_name == 'pull_request'
     needs: test-core
-    uses: GitGab19/sv2-integration-test-framework/.github/workflows/test-with-branch.yml@main
+    uses: GitGab19/sv2-integration-test-framework-test/.github/workflows/test-with-branch.yml@main
     with:
-      repo_name: "sv2-core-test"
-      branch_name: ${{ github.head_ref }}
+      repo_name: "sv2-miner-apps-test"
+      branch_name: ${{ github.event.pull_request.head.ref }}
+      repo_url: ${{ github.event.pull_request.head.repo.clone_url }}
