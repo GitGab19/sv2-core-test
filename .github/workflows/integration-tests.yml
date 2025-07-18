@@ -12,6 +12,4 @@ jobs:
       repo_name: "sv2-core-test"
       branch_name: ${{ github.head_ref }}
       repo_url: ${{ github.event.pull_request.head.repo.html_url }}
-      repo_slug: ${{ github.event.pull_request.head.repo.full_name }}
-      pr_number: ${{ github.event.number }}
     secrets: inherit
