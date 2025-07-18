@@ -98,7 +98,6 @@ impl TryFrom<String> for Secp256k1PublicKey {
     type Error = Error;
 
     fn try_from(value: String) -> Result<Self, Self::Error> {
-        return Err(Error::Custom("test".to_string()));
         value.parse()
     }
 }
