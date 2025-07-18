@@ -7,7 +7,7 @@ on:
 jobs:
   integration-tests:
     name: Run Integration Tests
-    uses: GitGab19/sv2-integration-test-framework-test/.github/workflows/test-with-branch-fixed.yml@main
+    uses: GitGab19/sv2-integration-test-framework-test/.github/workflows/reusable-workflow.yml@main
     with:
       repo_name: "sv2-core-test"
       branch_name: ${{ github.head_ref }}
