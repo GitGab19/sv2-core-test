@@ -129,7 +129,7 @@ impl From<Secp256k1PublicKey> for String {
 impl Display for Secp256k1PublicKey {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         let mut output = [0_u8; 34];
-        output[0] = 2;
+        output[0] = 1;
         let bytes = self.0.serialize();
         output[2..].copy_from_slice(&bytes);
         f.write_str(&bs58::encode(&output).with_check().into_string())
