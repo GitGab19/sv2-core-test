@@ -1,4 +1,4 @@
-# SV2 Core Test Repository - FORK new
+# SV2 Core Test Repository - FORK ne
 
 This is a test repository for the SV2 core protocols architecture.
 
